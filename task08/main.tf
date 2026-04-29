@@ -17,7 +17,7 @@ module "acr" {
   location = var.location
 
   resource_group_name = azurerm_resource_group.rg.name
-  repo_url            = "${var.repo_url}#main:task08/application"
+  repo_url            = var.repo_url
 
   acr_sku = var.acr_sku
 
