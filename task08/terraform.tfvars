@@ -5,16 +5,16 @@ tags = {
 }
 
 
-acr_sku = "Basic"
+acr_sku      = "Basic"
 aci_sku_name = "Standard"
-capacity = 2
-family = "C"
+capacity     = 2
+family       = "C"
 
-key_vault_sku = "standard"
-location = "North Europe"
-redis_hostname = "redis-hostname"
+key_vault_sku     = "standard"
+location          = "North Europe"
+redis_hostname    = "redis-hostname"
 redis_primary_key = "redis-primary-key"
-redis_sku_name = "Basic"
-repo_url = "value"
+redis_sku_name    = "Basic"
+repo_url          = "value"
 
 

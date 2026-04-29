@@ -1,17 +1,17 @@
 terraform {
-  
+
   required_providers {
     azurerm = {
-        source = "hashicorp/azurerm"
-        version = ">= 3.110.0, < 4.0.0"
+      source  = "hashicorp/azurerm"
+      version = ">= 3.110.0, < 4.0.0"
     }
 
     kubernetes = {
-      source = "hashicorp/kubernetes"
+      source  = "hashicorp/kubernetes"
       version = "~> 2.27"
     }
     kubectl = {
-      source = "alekc/kubectl"
+      source  = "alekc/kubectl"
       version = "~> 2.0"
     }
   }
@@ -21,16 +21,16 @@ terraform {
 
 provider "azurerm" {
 
-    features {
-     key_vault {
-        purge_soft_delete_on_destroy = true
+  features {
+    key_vault {
+      purge_soft_delete_on_destroy    = true
       recover_soft_deleted_key_vaults = true
-     }
-     resource_group {
-       prevent_deletion_if_contains_resources = false
-     }
     }
-  
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+  }
+
 }
 
 provider "kubernetes" {
