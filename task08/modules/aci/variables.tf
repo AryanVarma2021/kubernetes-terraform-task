@@ -36,14 +36,11 @@ variable "container_conf" {
 
   description = "A list of container configurations for the Azure Container Instance"
   type = list(object({
-    name   = string
-    image  = string
-    cpu    = number
-    memory = number
-    ports = list(object({
-      protocol = string
-      port     = number
-    }))
+    name                         = string
+    image                        = string
+    cpu                          = number
+    memory                       = number
+    port                         = number
     environment_variables        = map(string)
     secure_environment_variables = map(string)
   }))

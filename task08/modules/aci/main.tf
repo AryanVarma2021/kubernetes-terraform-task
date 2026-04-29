@@ -35,7 +35,7 @@ resource "azurerm_container_group" "container_group" {
 
       ports {
         port     = container.value.port
-        protocol = container.value.protocol
+        protocol = "TCP"
       }
 
       environment_variables        = container.value.environment_variables
