@@ -15,6 +15,6 @@ location          = "North Europe"
 redis_hostname    = "redis-hostname"
 redis_primary_key = "redis-primary-key"
 redis_sku_name    = "Basic"
-repo_url          = "value"
+repo_url          = "https://github.com/AryanVarma2021/kubernetes-terraform-task/tree/main/task08/application"
 
 
