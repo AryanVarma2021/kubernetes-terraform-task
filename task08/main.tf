@@ -48,6 +48,8 @@ module "aci" {
 
   tags = var.tags
 
+  depends_on = [ module.acr ]
+
 }
 
 
@@ -85,6 +87,8 @@ module "redis" {
 
 
   tags = var.tags
+
+  depends_on = [ module.key_vault ]
 
 
 }
