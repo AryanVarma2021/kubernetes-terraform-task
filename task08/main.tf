@@ -23,6 +23,7 @@ module "acr" {
 
   git_pat    = var.git_pat
   image_name = local.image_name
+  tags       = var.tags
 
 
 

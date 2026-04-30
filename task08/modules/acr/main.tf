@@ -31,6 +31,8 @@ resource "azurerm_container_registry_task" "acr_task" {
 
   }
 
+  tags = var.tags
+
 
 }
 

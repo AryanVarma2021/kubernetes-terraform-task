@@ -42,3 +42,9 @@ variable "image_name" {
   type        = string
 
 }
+
+variable "tags" {
+  description = "Tags to be applied to the ACR and related resources"
+  type        = map(string)
+
+}
