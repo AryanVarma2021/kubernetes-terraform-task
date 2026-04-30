@@ -51,3 +51,9 @@ variable "tags" {
   type        = map(string)
 
 }
+
+variable "keyvault_id" {
+  description = "ID of the Key Vault where Redis Cache secrets will be stored"
+  type        = string
+
+}

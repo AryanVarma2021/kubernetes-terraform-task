@@ -85,6 +85,8 @@ module "redis" {
   family   = var.family
   sku_name = var.redis_sku_name
 
+  keyvault_id = module.key_vault.key_vault_id
+
 
   tags = var.tags
 
