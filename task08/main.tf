@@ -34,7 +34,7 @@ module "aci" {
 
 
   resource_group                = azurerm_resource_group.rg.name
-  azure_conatiner_instance_name = local.aci_container_name
+  azure_conatiner_instance_name = local.aci_name
   location                      = var.location
   dns_name_label                = local.aci_dns_label
   sku_name                      = var.aci_sku_name
